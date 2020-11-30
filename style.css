@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 25%;
+}
+
+
+/* icon */
+.nav-icon {
+    align-self: center;
+}
+
+.nav-icon ul {
+    display: flex
+}
+
+.nav-icon ul li {
+    list-style: none;
+}
+
+.nav-icon ul li:hover {
+    background-color: #fe6601;
+}
+
+.name-icon {
+    display: flex;
+}
+
