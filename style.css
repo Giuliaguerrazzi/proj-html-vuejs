@@ -31,6 +31,7 @@ nav {
 
 .nav-icon ul li {
     list-style: none;
+    text-align: center;
 }
 
 .nav-icon ul li:hover {
@@ -39,5 +40,66 @@ nav {
 
 .name-icon {
     display: flex;
+    justify-content: center;
 }
 
+/* jumbotron */
+.jumbotron {
+    background-image: url('./images/slider_slide3_background.png');
+    background-repeat: repeat;
+    background-size: contain;
+    height: 400px;
+}
+
+.train {
+    position: absolute;
+    left: 42%;
+    top: 81%;
+    width: 18%;
+}    
+
+.toys {
+    position: absolute;
+    right: 7%;    
+    top: 97%;
+    width: 12%;
+}
+
+/* row */
+.row {
+    background: url('./images/pattern.png');
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row h2 {
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-self: center;
+}
+
+.row .btn {
+    align-self: center;
+}
+
+.row button {
+    padding: 10px 15px;
+    background-color: #554e9e;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 400;
+}
+
+.row button i {
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.row button:hover {
+    background-color: #fff;
+    color: #554e9e;
+    border: 2px solid #fff;
+}
