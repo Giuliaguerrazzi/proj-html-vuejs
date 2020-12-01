@@ -16,6 +16,18 @@ body {
     background-color: #444275;
 }
 
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-40-30 {
+    padding: 40px 30px;
+}
+
+.pad-40 {
+    padding: 40px;
+}
+
 /* navbar */
 nav {
     display: flex;
@@ -150,7 +162,7 @@ nav {
     text-align: center;
 }
 
-.features .circle-img {
+ .circle-img {
     width: 70px;
     height: 70px;
     position: relative;
@@ -160,7 +172,7 @@ nav {
 }
 
 
-.features .circle-img img {
+.circle-img img {
     width: 28px;
     position: absolute;
     top: 30%;
@@ -237,5 +249,46 @@ nav {
 
 .slider .box-dx {
     width: 300px;
-    border: 1px solid black;
+}
+
+.slider .box-dx img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* data */
+.data {
+    background: url('./images/parallax_01.jpg');
+    background-size: cover;
+    background-position: 0px;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container-data {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.data span {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size:30px;
+    font-weight: 300;  
+}
+
+.circle-img-white {
+    margin: 0 auto;
+}
+
+.data h3 {
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.data p {
+    margin-top: 10px;
 }
