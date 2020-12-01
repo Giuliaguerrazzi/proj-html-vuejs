@@ -30,6 +30,6 @@ const app = new Vue ({
                 link: 'envelope',
                 name: 'Contact'
             },
-        ]
+        ],
     }
 });
