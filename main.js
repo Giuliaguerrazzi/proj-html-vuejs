@@ -31,5 +31,27 @@ const app = new Vue ({
                 name: 'Contact'
             },
         ],
+
+        months: [
+            {
+                month: 'OCTOBER 2014(2)'
+            },
+            {
+                month: 'SEPTEMBER 2014(2)'
+            },
+            {
+                month: 'AUGUSTU 2014(2)'
+            },
+            {
+                month: 'JULY 2014(2)'
+            },
+            {
+                month: 'JUNE 2014(2)'
+            },
+            {
+                month: 'MAY 2014(1)'
+            },
+            
+        ]
     }
 });

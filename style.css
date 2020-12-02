@@ -201,8 +201,8 @@ nav {
     justify-content: center;
 }
 
-.slider .box-sx {
-    width: 300px;
+.box-sx {
+    width: 350px;
     margin-top: 40px;
 }
 
@@ -252,8 +252,8 @@ nav {
     left: 30%;
 }
 
-.slider .box-dx {
-    width: 300px;
+.box-dx {
+    width: 350px;
 }
 
 .slider .box-dx img {
@@ -327,11 +327,16 @@ nav {
     font-size: 15px;
 }
 
+.purple-size {
+    display: flex;
+    justify-content: center;
+}
+
 .purple-box {
     width: 350px;
     display: flex;
     color: #fff;
-    margin-top: 30px;
+    margin: 20px;
     position: relative;
 }
 
@@ -353,4 +358,95 @@ nav {
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+/* info */
+.info {
+    display: flex;
+    justify-content: center;
+    background: #e8e6e7;
+}
+
+.info p,
+.info small {
+    color: #444275;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info small {
+    font-size: 15px;
+}
+
+.info ul {
+    margin-top: 20px;
+}
+
+.check-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.check-list small {
+    display: inline;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: url('./images/pattern.png');
+    color: #e8e6e7;
+}
+
+.box-footer {
+    width: 25%;
+    margin: 10px 5px;
+}
+
+footer h4 {
+    font-weight: 400;
+    font-size: 13px;
+    margin: 10px 5px;
+    position: relative;
+}
+
+footer h4::after {
+    content: '';
+    display: block;
+    width: 35px;    
+    height: 2px;
+    background: #e8e6e7;    
+    margin: 8px 0;
+    opacity: 0.5;
+}
+
+footer .about img {
+    width: 35%;
+    margin-top: 20px;
+}
+
+footer .archives ul li {
+    list-style: none;    
+    font-size: 12px;
+    border: 1px solid #e8e6e7;
+    width: 160px;
+    margin-top: 5px;
+}
+
+footer .archives ul {
+    margin-top: 15px;
+}
+
+footer span {
+    padding: 8px;   
+    line-height: 40px;
 }
