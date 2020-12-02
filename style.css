@@ -33,6 +33,10 @@ body {
     font-weight: 400;
 }
 
+.d-inline {
+    display: inline;
+}
+
 /* navbar */
 nav {
     display: flex;
@@ -405,15 +409,15 @@ footer {
     justify-content: center;
     background: url('./images/pattern.png');
     color: #e8e6e7;
+    opacity: 0.8;
 }
 
 .box-footer {
-    width: 25%;
-    margin: 10px 5px;
+    margin-top: 15px;
 }
 
 footer h4 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
     margin: 10px 5px;
     position: relative;
@@ -430,7 +434,7 @@ footer h4::after {
 }
 
 footer .about img {
-    width: 35%;
+    width: 60%;
     margin-top: 20px;
 }
 
@@ -450,3 +454,22 @@ footer span {
     padding: 8px;   
     line-height: 40px;
 }
+
+.recent-post li {
+    list-style: none;
+    display: flex;
+}
+
+.recent-post .photo {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.calendar {
+    width: 10%;
+}
+
+.post {
+    margin-left: 5px;
+}
+

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
@@ -364,7 +365,7 @@
         <!-- footer -->
         <footer>
 
-            <div class='box-footer about'>
+            <div class='col-lg-2 box-footer about'>
                 <h4>ABOUT</h4>
 
                 <p>
@@ -374,7 +375,7 @@
                 <img src="./images/logo_footer.png" alt="">
             </div>
 
-            <div class=' archives'>
+            <div class='col-lg-2 box-footer archives'>
                 <h4>ARCHIVES</h4>
                 <ul>
                     <li v-for='element in months'>
@@ -383,17 +384,38 @@
                 </ul>
             </div>
 
-            <div class='box-footer our-features'>
+            <div class='col-lg-2 box-footer our-features'>
                 <h4>OUR FEATURES</h4>
                 <p>
                     Nunc gravida rutrum mauris vehin hasellus ac pretium augue vivamul lacus ligul mattis ac vene:
                 </p>
 
+                <ul>
+                    <li v-for='feature in features' class='check-list'>
+                        <img src="./images/style_4_alt.png" alt=""> 
+                        <small> {{feature.info}}</small>
+                    </li>
+                    
+                </ul>
 
             </div>
 
-            <div class=' recent-post'>
+            <div class='box-footer col-lg-2 recent-post'>
                 <h4>RECENT POST</h4>
+
+                <ul>
+                    <li v-for='post in posts'>
+                        <img class='photo':src="'./images/blog' + post.image + '.jpg'" alt="">
+
+                        <div class='post'>
+                            <p>{{post.lesson}}</p>
+                            <img class='calendar' src="./images/date_footer.png" alt="">
+                            <p class='d-inline'>{{post.data}}</p>
+                        </div>
+                    </li>
+
+                    
+                </ul>
             </div>
 
         </footer>
