@@ -280,7 +280,6 @@ nav {
 
 .box-dx {
     width: 380px;
-    margin-top: 30px
 }
 
 .slider .box-dx .first-photo{
@@ -445,13 +444,49 @@ nav {
     display: flex;
     align-items: center;
     line-height: 25px;
+    padding: 4px 0px;
 }
 
 .check-list small {
     display: inline;
     font-size: 12px;
-    margin-left: 3px;
+    margin-left: 6px;
 }
+
+.circle-img-small {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    list-style: none;
+}
+
+.circle-img-small img {
+    width: 28px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.box-small {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.box-small p {
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.box-small h3 {
+    font-size: 18px;
+    color: #444275;
+}
+
 
 /* footer */
 
