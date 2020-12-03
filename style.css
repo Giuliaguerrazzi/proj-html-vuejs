@@ -37,6 +37,14 @@ body {
     display: inline;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
 /* navbar */
 nav {
     display: flex;
@@ -64,6 +72,7 @@ nav {
 
 .nav-icon ul li:hover {
     background-color: #fe6601;
+    color: #fff;
 }
 
 .name-icon {
@@ -133,6 +142,13 @@ nav {
     border: 2px solid #fff;
 }
 
+/* welcome to fable */
+
+.features nav {
+    display: flex;
+    justify-content: center;
+}
+
 .text-h2,
 .text-p {
     text-align: center;  
@@ -171,18 +187,21 @@ nav {
     text-align: center;
 }
 
+.box p {
+    padding: 0 15px;
+}
+
  .circle-img {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: relative;
     border-radius: 50%;
     list-style: none;
-    margin: 0 auto;
 }
 
 
 .circle-img img {
-    width: 28px;
+    width: 40px;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -192,11 +211,10 @@ nav {
     font-weight: 400;
     color:#444275;
     margin-top: 15px;   
+    font-size: 18px;
+    opacity: 0.8;
 }
 
-.list-circle .box p {
-    padding: 15px;
-}
 
 /* slider */
 .slider {
@@ -206,8 +224,9 @@ nav {
 }
 
 .box-sx {
-    width: 350px;
+    width: 380px;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .slider .box-sx button {
@@ -230,40 +249,50 @@ nav {
 
 .slider .box-sx p {
     display: inline-block;
-    font-weight: 300;
+    font-weight: 400;
     color: #444275; 
     opacity: 0.7; 
     font-size: 14px;
-    padding: 15px;
 }
 
 .slider .box-sx .info {
-    font-size: 21px;
+    font-size: 25px;
     margin-top: 15px;
 }
 
 .slider .img {
-    width: 60px;
-    height: 60px;
+    width: 93px;
+    height: 50px;
     position: relative;
     border-radius: 50%;
 }
 
+.day-session {
+    margin-left: 15px;
+}
+
 .slider .img img {
-    width: 25px;
+    width: 21px;
     position: absolute;
-    top: 27%;
+    top: 28%;
     left: 30%;
 }
 
 .box-dx {
-    width: 350px;
+    width: 380px;
+    margin-top: 30px
 }
 
-.slider .box-dx img {
-    width: 100%;
-    margin-top: 30px;
+.slider .box-dx .first-photo{
+   width: 100%;
+   margin-top: 30px;
+   margin-bottom: 15px;
 }
+
+.photos img {
+    width: 32%;
+    margin-left: 2px;
+}    
 
 /* data */
 .data {
@@ -340,19 +369,41 @@ nav {
     width: 350px;
     display: flex;
     color: #fff;
-    margin: 20px;
+    margin: 15px;
     position: relative;
 }
 
 .purple {
-    display: flex;
+    width: 50%;
     background: #444275;
     padding: 15px;
 }
 
+.purple-box img {
+    width: 50%;
+}
+
 .months-old {
-    display: flex;
-    align-items: flex-end;
+     display: flex;
+     text-align: center;
+     margin-top: 20px;
+     opacity: 0.8;
+}
+
+.class {
+    margin-left: 10px;
+    position: relative;
+}
+
+.class::after {
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 2px;
+    background:        #e8e6e7;
+    opacity: 0.5;
+    top: 17px;
+    left: -6px;
 }
 
 .purple-box button {

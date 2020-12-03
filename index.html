@@ -20,7 +20,7 @@
             <div class='nav-icon'>
                 <ul>
                     <li v-for='icon in icons'>
-                        <img :src="'./images/' + icon.link + '.png'" alt="">
+                        <img class='pad-20':src="'./images/' + icon.link + '.png'" alt="">
                       <span class='name-icon'>{{icon.name}}</span> 
                     </li>                   
                 </ul>
@@ -51,7 +51,7 @@
 
             <div class='list-circle'>
                 <div class='box'>
-                    <div class='circle-img back-colororange'> 
+                    <div class='margin-auto circle-img back-colororange'> 
                         <img src="./images/schoolbag_alt.png" alt="">
                     </div>
 
@@ -62,7 +62,7 @@
                 </div>
                     
                 <div class='box'>
-                    <div class='circle-img back-colorpurple'> 
+                    <div class='margin-auto circle-img back-colorpurple'> 
                         <img src="./images/stroller_alt.png" alt="">
                     </div>
 
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class='box'>
-                    <div class='circle-img back-colororange'> 
+                    <div class='margin-auto circle-img back-colororange'> 
                         <img src="./images/globe_alt.png" alt="">
                     </div>
 
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class='box'>
-                    <div class='circle-img back-colorpurple'> 
+                    <div class='margin-auto circle-img back-colorpurple'> 
                         <img src="./images/bell_alt.png" alt="">
                     </div>
 
@@ -100,7 +100,7 @@
         <!-- slider -->
         <section class='slider'>
 
-            <div class='box-sx'>
+            <div class='col-lg-4 box-sx'>
 
                 <button class='back-colororange'>Overview</button>
 
@@ -108,22 +108,25 @@
 
                 <p class='info'>Our philosophy is learning through play as we offer a stimulating environment for children.</p>
 
-                <div>
+                <div class='d-flex'>
                     <div class='img circle-img back-colororange'>
                         <img src="./images/clock_alt.png" alt="">                        
                     </div>
 
-                    <h4>Full Day Sessions</h4>
+                    <div class='day-session'>
+                        <h4>Full Day Sessions</h4>
     
-                        <p>Pulvinar es metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>      
+                        <p>Pulvinar es metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p> 
+                    </div>
+                     
                 </div>
 
-                <div>
+                <div class='d-flex'>
                     <div class='img circle-img back-colororange'>
                         <img src="./images/diagram_alt.png" alt="">                        
                     </div>
                     
-                    <div>
+                    <div class='day-session'>
                         <h4>Full Day Sessions</h4>
     
                         <p>Pulvinar es metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>  
@@ -133,8 +136,17 @@
                 
             </div>
 
-            <div class='box-dx'>
-                <img src="./images/gallery_01-690x506.jpg" alt="">
+            <div class='col-lg-4 box-dx'>
+                <img class='first-photo' src="./images/gallery_01-690x506.jpg" alt="">
+
+                <div class='photos'>
+                    <img src="./images/gallery_07-690x506.jpg" alt="">
+
+                    <img src="./images/gallery_01-690x506.jpg" alt="">
+
+                    <img src="./images/gallery_08-690x506.jpg" alt="">
+                </div>
+                
             </div>
         </section>
 
@@ -217,13 +229,20 @@
 
                 <div class='purple-box'>
                     <div class='purple'>
-                        <div>
-                            <p>Little lambs</p>     <small>Class name</small>
-                        </div>                        
-
+                    
+                            <h5>Little lambs</h5>     
+                            <p>Class name</p>
+                                             
                         <div class='months-old'>
-                            <span>12-24</span>
-                            <p>Months old</p>
+                            <div>
+                                <h5>12-24</h5>
+                                <p>Months old</p>
+                            </div>  
+                            
+                            <div class='class'>
+                                <h5>9</h5>
+                                <p>Class size</p>
+                            </div>  
                             
                         </div>
                     </div>
@@ -234,15 +253,22 @@
 
                 <div class='purple-box'>
                     <div class='purple'>
-                        <div>
+                      
                             <p>Bouncy Bears</p>     <small>Class name</small>
-                        </div>                        
+                                              
 
-                        <div class='months-old'>
-                            <span>2-3</span>
-                            <p>Years old</p>
-                            
-                        </div>
+                            <div class='months-old'>
+                                <div>
+                                    <h5>2-3</h5>
+                                    <p>Years old</p>
+                                </div>  
+                                
+                                <div class='class'>
+                                    <h5>12</h5>
+                                    <p>Class size</p>
+                                </div>  
+                                
+                            </div>
                     </div>
                     <img src="./images/class_02-690x506.jpg" alt="">
 
@@ -256,16 +282,23 @@
 
                 <div class='purple-box'>
                     <div class='purple'>
-                        <div>
-                            <p>Tenderhearts
-                            </p>     <small>Class name</small>
-                        </div>                        
+
+                        <p>Tenderhearts</p>     
+                        <small>Class name</small>
+                                               
 
                         <div class='months-old'>
-                            <span>3-4</span>
-                            <p>Years old</p>
+                            <div>
+                                <h5>3-4</h5>
+                                <p>Years old</p>
+                            </div>  
                             
+                            <div class='class'>
+                                <h5>15</h5>
+                                <p>Class size</p>
+                            </div>                              
                         </div>
+
                     </div>
                     <img src="./images/class_03-690x506.jpg" alt="">
 
@@ -274,15 +307,22 @@
 
                 <div class='purple-box'>
                     <div class='purple'>
-                        <div>
-                            <p>Shining stars</p>     <small>Class name</small>
-                        </div>                        
+                        
+                            <p>Shining stars</p>     <small>Class name</small>              
 
+                       
                         <div class='months-old'>
-                            <span>4-5</span>
-                            <p>Years old</p>
+                            <div>
+                                <h5>4-5</h5>
+                                <p>Years old</p>
+                            </div>  
                             
+                            <div class='class'>
+                                <h5>20</h5>
+                                <p>Class size</p>
+                            </div>                              
                         </div>
+
                     </div>
                     <img src="./images/class_04-690x506.jpg" alt="">
 
