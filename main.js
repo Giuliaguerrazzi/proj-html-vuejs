@@ -1,36 +1,75 @@
 const app = new Vue ({
     el: '#app',
     data: {
+        showMenu: false,
         icons: [
             {
                 link: 'home',
-                name: 'Home'
+                name: 'Home',
             },
             {
                 link: 'document',
                 name: 'Pages',
+   
             },
             {
                 link: 'printer',
                 name: 'Blog',
+                
             },
             {
                 link: 'cart',
                 name: 'Shop',
+                
             },
             {
                 link: 'lab',
-                name: 'Shortcodes'
+                name: 'Shortcodes',
+               
             },
             {
                 link: 'chat',
-                name: 'Support'
+                name: 'Support',
+                
             },
             {
                 link: 'envelope',
-                name: 'Contact'
+                name: 'Contact',
+                
             },
+    
         ],
+
+        iconsHover: [
+            {
+                 link: 'home-2',
+                 name: 'Home'
+             },
+             {
+                 link: 'document-2',
+                 name: 'Pages',
+             },
+             {
+                 link: 'printer-2',
+                 name: 'Blog',
+             },
+             {
+                 link: 'cart-2',
+                 name: 'Shop',
+            },
+            {
+                 link: 'lab-2',
+                 name: 'Shortcodes'
+             },
+             {
+                 link: 'chat-2',
+                 name: 'Support'
+             },
+             {
+                link: 'envelope-2',
+                 name: 'Contact'
+             },
+         ],
 
         months: [
             {
@@ -91,5 +130,11 @@ const app = new Vue ({
                 data: 'September 20, 2014'
             },
         ]
+
+    },
+    methods: {
+        visible() {
+            this.showMenu = ! this.showMenu;
+        },
     }
 });

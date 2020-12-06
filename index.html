@@ -18,8 +18,19 @@
             </div>
 
             <div class='nav-icon'>
-                <ul>
-                    <li v-for='icon in icons'>
+                <ul v-if='showMenu'>
+                    <li
+                    v-for='icon in icons'
+                    @mouseover="visible" >
+                        <img class='pad-20':src="'./images/' + icon.link + '.png'" alt="">
+                      <span class='name-icon'>{{icon.name}}</span> 
+                    </li>                   
+                </ul>
+
+                <ul v-else>
+                    <li
+                    v-for='icon in iconsHover'
+                    @mouseleave="visible" >
                         <img class='pad-20':src="'./images/' + icon.link + '.png'" alt="">
                       <span class='name-icon'>{{icon.name}}</span> 
                     </li>                   
