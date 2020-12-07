@@ -2,6 +2,7 @@ const app = new Vue ({
     el: '#app',
     data: {
         showMenu: false,
+        indexPhoto: 0,
         icons: [
             {
                 link: 'home',
@@ -129,12 +130,31 @@ const app = new Vue ({
                 lesson: 'Birthday in Kindergarten',
                 data: 'September 20, 2014'
             },
-        ]
+        ],
 
+        photo: [
+            './images/gallery_01-690x506.jpg',
+            './images/gallery_07-690x506.jpg',
+            './images/gallery_08-690x506.jpg',
+        ],
     },
     methods: {
         visible() {
             this.showMenu = ! this.showMenu;
         },
+        nextPhoto() {
+            this.indexPhoto += 1;
+
+            if(this.indexPhoto > (this.photo.length - 1)) {
+                this.indexPhoto = 0;
+            }
+        },
+        prevPhoto() {
+            this.indexPhoto -= 1;
+            
+            if(this.indexPhoto < 0) {
+                this.indexPhoto = this.photo.length - 1;
+            }
+        },    
     }
 });

@@ -148,7 +148,12 @@
             </div>
 
             <div class='col-lg-4 box-dx'>
-                <img class='first-photo' src="./images/gallery_01-690x506.jpg" alt="">
+
+                <i class="fas fa-chevron-left" @click='prevPhoto'></i>
+                
+                <img class='first-photo' :src="photo[indexPhoto]" alt="">
+
+                <i class="fas fa-chevron-right"  @click='nextPhoto'></i>
 
                 <div class='photos'>
                     <img src="./images/gallery_07-690x506.jpg" alt="">
@@ -677,9 +682,7 @@
                             <img class='calendar' src="./images/date_footer.png" alt="">
                             <p class='d-inline'>{{post.data}}</p>
                         </div>
-                    </li>
-
-                    
+                    </li>                    
                 </ul>
             </div>
 

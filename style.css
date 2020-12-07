@@ -290,6 +290,22 @@ nav {
    width: 100%;
    margin-top: 30px;
    margin-bottom: 15px;
+   position: relative;
+}
+
+.box-dx .fa-chevron-left,
+.box-dx .fa-chevron-right {
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    font-size: 20px;
+    padding: 10px;
+    background: #fe6601;
+    color: #fff;
+}
+
+.box-dx .fa-chevron-right {
+    right: 4%;
 }
 
 .photos img {
